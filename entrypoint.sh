@@ -6,4 +6,7 @@
 # so, basically, it's magic!
 source /opt/rh/devtoolset-*/enable
 
+# Make sure that the pkgconfig configs are available
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig
+
 exec "$@"
